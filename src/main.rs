@@ -55,8 +55,8 @@ async fn main() -> Result<()> {
     let stdin = io::stdin();
     let mut stdout = io::stdout();
     let mut lines = stdin.lock().lines();
-    stdout.write_all(b">");
-    stdout.flush();
+    stdout.write_all(b">")?;
+    stdout.flush()?;
     while let Some(Ok(line)) = lines.next() {
         if !line.starts_with("--") {
             if line.eq_ignore_ascii_case("exit") || line.eq_ignore_ascii_case("quit") {
@@ -73,8 +73,8 @@ async fn main() -> Result<()> {
             } else {
                 df?.show().await?;
             }
-            stdout.write_all(b">");
-            stdout.flush();
+            stdout.write_all(b">")?;
+            stdout.flush()?;
         }
     }
     Ok(())
