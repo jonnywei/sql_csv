@@ -1,0 +1,14 @@
+[package]
+name = "sql_csv"
+version = "0.1.0"
+authors =["weijianjun7100@gmail.com"]
+edition = "2021"
+description = "A tool which query csv files use SQL syntax"
+license = "MIT"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+anyhow = "1"
+datafusion = "6"
+tokio = {version = "1", features= ["full"]}
