@@ -1,6 +1,6 @@
 [package]
 name = "sql_csv"
-version = "0.1.0"
+version = "0.2.0"
 authors =["weijianjun7100@gmail.com"]
 edition = "2021"
 description = "A tool which query csv files use SQL syntax"
