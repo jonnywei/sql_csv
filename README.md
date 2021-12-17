@@ -21,8 +21,14 @@ store /path/to/xxx.csv
 **SQL**
 
 All SQL query support.
+```
+select * from user;
+select count(*) from user;
+select city,count(*) from user group by city;
 
-Usage:
+```
+
+## Examples
 ```
 $sql_csv.exe c:\temp\user.csv  c:\temp\author.csv
 read csv file c:\temp\user.csv to table user
